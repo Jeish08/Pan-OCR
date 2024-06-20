@@ -1,0 +1,46 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <style>
+        body {background-color: #BC8F8F;
+        background-image:linear-gradient(to right,#31B7C2, #7BC393 );}
+        background-repeat: no-repeat;
+        transparency: 0.5;
+        background-attachment: scroll;
+        background-size: 125% 125%;}
+        p.solid {border-style: solid;}
+        div{
+        background-color: white;
+        background-image: linear-gradient(to right, linen, beige);
+        background-size: 105% 130%;
+        opacity:0.1;
+        background-transparency: 0.9;
+        opacity: 0.8;
+        width: 550px;
+        height : 250px;
+        border: 6px solid silver;
+        padding: 70px;
+        margin-right: 250px;
+        margin-left:300px;
+        margin-top: 70px
+        }
+        label{
+        color:black;}
+    </style>
+</head>
+<body>
+<h1 style="color:white;">WELCOME TO PERPETUUITI!</h1>
+<form action="/upload/" method="post">
+    <div>
+        <h1 style="color:black;">UPLOAD FILE</h1>
+        <label for="imagefile">IMAGE:</label><br>
+        <p><input type="file" name="imagefile" value="{{request.form.imagefile}}" id="fileToUpload"></p>
+         <label for="submit">UPLOAD:</label><br>
+        <p><input type="submit" value="submit"/></p>
+    </div>
+</form>
+</body>
+</html>
